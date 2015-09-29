@@ -147,7 +147,7 @@ font-weight: 900;
 	}
 /* Home Style */
 #tf-home{
-	background: url(../img/sushi-background.png);
+	background: url(../img/07.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -210,7 +210,7 @@ ul.about-list li span{
 
 /* Team Section */
 #tf-team{
-	background: url(../img/08.jpg);
+	background: url(../img/09.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
