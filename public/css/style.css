@@ -1,7 +1,30 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
-table{
-   border: 1px solid #d3d3d3;
+
+.soju{
+	background-color:#222;
+	color: white;
+}
+
+#floatMenu {
+    position:absolute;
+    z-index:1000;
+    top:100px;
+    left:1%;
+    margin-left:10px;
+    width:200px;
+}
+#floatMenu ul {
+    margin-bottom:20px;
+    list-style-type: none;
+}
+#floatMenu ul li a {
+    display:block;
+    border:1px solid #999;
+    background-color:#222;
+    text-decoration:none;
+    color:#ccc;
+    padding:5px 5px 5px 25px;
 }
 
 .address{
@@ -124,7 +147,7 @@ font-weight: 900;
 	}
 /* Home Style */
 #tf-home{
-	background: url(../img/07.jpg);
+	background: url(../img/sushi-background.png);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;

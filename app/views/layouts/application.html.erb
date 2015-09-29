@@ -88,8 +88,239 @@
           e.style.display = 'block';
     }
 //-->
+var name = "#floatMenu";
+var menuYloc = null;
+ 
+$(document).ready(function(){
+    menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))
+    $(window).scroll(function () { 
+        var offset = menuYloc+$(document).scrollTop()+"px";
+        $(name).animate({top:offset},{duration:500,queue:false});
+    });
+});
 </script>
 
+<div id="floatMenu">
+   <ul>
+      <li>
+         <a onclick="toggle_visibility('soup');">Soup and Salad</a>
+         <div class ="soju" id="soup" style='display:none;'>
+            <table align="center">
+               <tr>
+                  <td>Miso Soup </td>
+                  <td>1.25</td>
+               </tr>
+               <tr>
+                  <td>Seaweed Salad </td>
+                  <td>3.50</td>
+               </tr>
+               <tr>
+                  <td>Green Salad </td>
+                  <td>1.99</td>
+               </tr>
+               <tr>
+                  <td>Cucumber Salad </td>
+                  <td>3.50</td>
+               </tr>
+               <tr>
+                  <td>Sashimi Salad </td>
+                  <td>10.95</td>
+               </tr>
+               <tr>
+                  <td>Sunomono (Shrimp or Octopus) </td>
+                  <td>6.50</td>
+               </tr>
+            </table>
+         </div>
+      </li>
+      <li>
+         <a onclick="toggle_visibility('Appetizers');">Appetizers</a>
+         <div class ="soju" id="Appetizers" style='display:none;'>
+            <table align="center">
+               <tr>
+                  <td>Albacore Appetizer </td>
+                  <td>9.95</td>
+               </tr>
+               <tr>
+                  <td>Seaweed Salad </td>
+                  <td>3.50</td>
+               </tr>
+               <tr>
+                  <td>Green Salad </td>
+                  <td>1.99</td>
+               </tr>
+               <tr>
+                  <td>Cucumber Salad </td>
+                  <td>3.50</td>
+               </tr>
+               <tr>
+                  <td>Sashimi Salad </td>
+                  <td>10.95</td>
+               </tr>
+               <tr>
+                  <td>Sunomono (Shrimp or Octopus) </td>
+                  <td>6.50</td>
+               </tr>
+            </table>
+         </div>
+      </li>
+      <li>
+         <a onclick="toggle_visibility('Lunch');">Lunch</a>
+         <div class ="soju"  id="Lunch" style='display:none;'>
+            <table align="center">
+               <tr>
+                  <td>1 Entree Lunch </td>
+                  <td>8.50</td>
+               </tr>
+               <tr>
+                  <td>2 Entree Lunch </td>
+                  <td>9.50</td>
+               </tr>
+               <tr>
+                  <td>Children's Lunch </td>
+                  <td>5.95</td>
+               </tr>
+            </table>
+         </div>
+      </li>
+      <li>
+         <a onclick="toggle_visibility('Dinner');">Dinner</a>
+         <div class ="soju"  id="Dinner" style='display:none;'>
+            <table align="center">
+               <tr>
+                  <td>Chicken Teriyaki </td>
+                  <td>9.95</td>
+               </tr>
+               <tr>
+                  <td>Yakiniku</td>
+                  <td>10.95</td>
+               </tr>
+               <tr>
+                  <td>Tonkatsu</td>
+                  <td>10.50</td>
+               </tr>
+               <tr>
+                  <td>Chicken Katsu</td>
+                  <td>10.50</td>
+               </tr>
+               <tr>
+                  <td>Sukiyaki</td>
+                  <td>14.95</td>
+               </tr>
+               <tr>
+                  <td>Saba shioyaki</td>
+                  <td>9.95</td>
+               </tr>
+               <tr>
+                  <td>Tempura</td>
+                  <td>10.50</td>
+               </tr>
+               <tr>
+                  <td>Vegetarian Tempura</td>
+                  <td>8.95</td>
+               </tr>
+               <tr>
+                  <td>Salmon Teriyaki</td>
+                  <td>10.50</td>
+               </tr>
+               <tr>
+                  <td>Spicy B.B.Q Pork</td>
+                  <td>10.95</td>
+               </tr>
+               <tr>
+                  <td>Spicy Chicken</td>
+                  <td>10.50</td>
+               </tr>
+               <tr>
+                  <td>Hamachi Kama</td>
+                  <td>10.95</td>
+               </tr>
+               <tr>
+                  <td>Salmon Kama</td>
+                  <td>9.95</td>
+               </tr>
+               <tr>
+                  <td>Korean B.B.Q short rib</td>
+                  <td>14.95</td>
+               </tr>
+            </table>
+         </div>
+      </li>
+      <li>
+         <a onclick="toggle_visibility('Donburi');">Donburi</a>
+         <div class ="soju" id="Donburi" style='display:none;'>
+            <table align="center">
+               <tr>
+                  <td>Chicken Teriyaki Donburi </td>
+                  <td>8.95</td>
+               </tr>
+               <tr>
+                  <td>Beef Teriyaki Donburi </td>
+                  <td>8.95</td>
+               </tr>
+               <tr>
+                  <td>Tempura Donburi </td>
+                  <td>8.95</td>
+               </tr>
+               <tr>
+                  <td>Unagi Donburi </td>
+                  <td>14.95</td>
+               </tr>
+               <tr>
+                  <td>Katsu Donburi</td>
+                  <td>10.95</td>
+               </tr>
+               <tr>
+                  <td>Tekka Don</td>
+                  <td>14.95</td>
+               </tr>
+               <tr>
+                  <td>Salmon Don</td>
+                  <td>13.95</td>
+               </tr>
+               <tr>
+                  <td>Chirashi</td>
+                  <td>14.95</td>
+               </tr>
+               <tr>
+                  <td>Hwedup Bob</td>
+                  <td>16.95</td>
+            </table>
+         </div>
+      </li>
+      <li>
+         <a onclick="toggle_visibility('Noodles');">Noodles</a>
+         <div class ="soju" id="Noodles" style='display:none;'>
+            <table align="center">
+               <tr>
+                  <td>Nabe Yaki Udon </td>
+                  <td>8.50</td>
+               </tr>
+               <tr>
+                  <td>Tempura Udon </td>
+                  <td>8.95</td>
+               </tr>
+               <tr>
+                  <td>Beef Udon </td>
+                  <td>9.95</td>
+               </tr>
+               <tr>
+                  <td>Seafood Udon</td>
+                  <td>9.95</td>
+               </tr>
+               <tr>
+                  <td>Yaki Soba </td>
+                  <td>8.95</td>
+               </tr>
+               <tr>
+                  <td>Zaru Soba </td>
+                  <td>9.95</td>
+               </tr>
+            </table>
+         </div>
+      </li>
+   </ul>
+</div>
 
 
     <!-- Navigation
@@ -125,7 +356,10 @@
     <div id="tf-home" class="text-center">
         <div class="overlay">
             <div class="content">
-                <h1>Welcome to <strong><span class="color">Sushi.com</span></strong></h1>
+                <!-- <h1>Welcome to <strong><span class="color">Sushi.com</span></strong></h1> -->
+
+                <img src="img/sushi-logo.gif"
+
                 <p class="lead">Come in and visit one of Spokane, Washington's finest Authentic Japanese Restaurants.<br> 
                 Serving authentic Japanese Cuisine (Sushi, Teriyaki, etc.)</p>
                 <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
