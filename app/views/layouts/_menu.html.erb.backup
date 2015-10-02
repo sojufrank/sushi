@@ -1,7 +1,4 @@
 <div id="floatMenu">
-<ul><li>
-<a onclick="toggle_visibility('menu');">Menu</a>
-<div class ="soju" id="menu" style='display:none;'>
    <ul>
       <li>
          <a onclick="toggle_visibility('soup');">Soup and Salad</a>
@@ -221,8 +218,4 @@
          </div>
       </li>
    </ul>
-   </div>
-   </li>
-   </ul>
-
 </div>
